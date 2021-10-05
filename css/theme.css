@@ -1,0 +1,281 @@
+/****** Framework Projects ******/
+/*
+    This is a project to build a customizable framework depending on 
+    the use case of the user
+
+    /*** Structure ***/
+    /************************/
+    /* CSS Variables */
+    /* Fonts */
+    /* Box Sizing Fixes */
+    /* Paddings */
+    /* Margins */
+    /* Font Types */
+    /* Font Sizes */
+/**********************************/
+
+/*** Bases Setters ***/
+/* Margins and Paddings Base */
+.base-4 {
+    --base: 4px;
+}
+.base-8 {
+    --base: 8px;
+}
+.base-16 {
+    --base: 16px;
+}
+/* Font Sizes Base */
+.text-base-4 {
+    --text-base: 4px;
+}
+.text-base-6 {
+    --text-base: 6px;
+}
+.text-base-8 {
+    --text-base: 8px;
+}
+
+/*** CSS Variables ***/
+:root {
+    --primary: rgb(0, 0, 0);
+    --secondary: rgb(0, 196, 114);
+}
+
+/*** Fonts ***/
+@font-face {
+    font-family: "Archivo-Regular";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-Regular.ttf");
+}
+@font-face {
+    font-family: "Archivo-Light";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-Light.ttf");
+}
+@font-face {
+    font-family: "Archivo-Italic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-Italic.ttf");
+}
+@font-face {
+    font-family: "Archivo-ExtraLightItalic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-ExtraLightItalic.ttf");
+}
+@font-face {
+    font-family: "Archivo-ExtraLight";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "Archivo-ExtraBoldItalic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-ExtraBoldItalic.ttf");
+}
+@font-face {
+    font-family: "Archivo-ExtraBold";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Archivo-BoldItalic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-BoldItalic.ttf");
+}
+@font-face {
+    font-family: "Archivo-Bold";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-Bold.ttf");
+}
+@font-face {
+    font-family: "Archivo-BlackItalic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-BlackItalic.ttf");
+}
+@font-face {
+    font-family: "Archivo-Black";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-Black.ttf");
+}
+@font-face {
+    font-family: "Archivo-Medium";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-Medium.ttf");
+}
+@font-face {
+    font-family: "Archivo-MediumItalic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-MediumItalic.ttf");
+}
+@font-face {
+    font-family: "Archivo-SemiBold";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Archivo-SemiBoldItalic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: "Archivo-Thin";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-Thin.ttf");
+}
+@font-face {
+    font-family: "Archivo-ThinItalic";
+    src: url("../assets/fonts/Archivo/static/Archivo/Archivo-ThinItalic.ttf");
+}
+
+/*** Box Sizing Fixes ***/
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+
+    --text-bold: "Archivo-Bold";
+    --text-regular: "Archivo-Regular";
+    --text-italic: "Archivo-Italic";
+
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+/*** Padding ***/
+/* All Padding */
+.p-1 {
+    padding: calc(var(--base) * 1);
+}
+.p-2 {
+    padding: calc(var(--base) * 2);
+}
+.p-3 {
+    padding: calc(var(--base) * 3);
+}
+.p-4 {
+    padding: calc(var(--base) * 4);
+}
+.p-5 {
+    padding: calc(var(--base) * 5);
+}
+
+/* Horizontal Padding */
+.px-1 {
+    padding-left: calc(var(--base) * 1);
+    padding-right: calc(var(--base) * 1);
+}
+.px-2 {
+    padding-left: calc(var(--base) * 2);
+    padding-right: calc(var(--base) * 2);
+}
+.px-3 {
+    padding-left: calc(var(--base) * 3);
+    padding-right: calc(var(--base) * 3);
+}
+.px-4 {
+    padding-left: calc(var(--base) * 4);
+    padding-right: calc(var(--base) * 4);
+}
+.px-5 {
+    padding-left: calc(var(--base) * 5);
+    padding-right: calc(var(--base) * 5);
+}
+
+/* Vertical Padding */
+.py-1 {
+    padding-top: calc(var(--base) * 1);
+    padding-bottom: calc(var(--base) * 1);
+}
+.py-2 {
+    padding-top: calc(var(--base) * 2);
+    padding-bottom: calc(var(--base) * 2);
+}
+.py-3 {
+    padding-top: calc(var(--base) * 3);
+    padding-bottom: calc(var(--base) * 3);
+}
+.py-4 {
+    padding-top: calc(var(--base) * 4);
+    padding-bottom: calc(var(--base) * 4);
+}
+.py-5 {
+    padding-top: calc(var(--base) * 5);
+    padding-bottom: calc(var(--base) * 5);
+}
+
+/*** Margin ***/
+/* All Margin */
+.m-1 {
+    margin: calc(var(--base) * 1);
+}
+.m-2 {
+    margin: calc(var(--base) * 2);
+}
+.m-3 {
+    margin: calc(var(--base) * 3);
+}
+.m-4 {
+    margin: calc(var(--base) * 4);
+}
+.m-5 {
+    margin: calc(var(--base) * 5);
+}
+
+/* Horizontal Margin */
+.mx-1 {
+    margin-left: calc(var(--base) * 1);
+    margin-right: calc(var(--base) * 1);
+}
+.mx-2 {
+    margin-left: calc(var(--base) * 2);
+    margin-right: calc(var(--base) * 2);
+}
+.mx-3 {
+    margin-left: calc(var(--base) * 3);
+    margin-right: calc(var(--base) * 3);
+}
+.mx-4 {
+    margin-left: calc(var(--base) * 4);
+    margin-right: calc(var(--base) * 4);
+}
+.mx-5 {
+    margin-left: calc(var(--base) * 5);
+    margin-right: calc(var(--base) * 5);
+}
+
+/* Vertical Margin */
+.my-1 {
+    margin-top: calc(var(--base) * 1);
+    margin-bottom: calc(var(--base) * 1);
+}
+.my-2 {
+    margin-top: calc(var(--base) * 2);
+    margin-bottom: calc(var(--base) * 2);
+}
+.my-3 {
+    margin-top: calc(var(--base) * 3);
+    margin-bottom: calc(var(--base) * 3);
+}
+.my-4 {
+    margin-top: calc(var(--base) * 4);
+    margin-bottom: calc(var(--base) * 4);
+}
+.my-5 {
+    margin-top: calc(var(--base) * 5);
+    margin-bottom: calc(var(--base) * 5);
+}
+
+/*** Font Types ***/
+.font-regular {
+    font-family: var(--text-regular);
+}
+.font-italic {
+    font-family: var(--text-italic);
+}
+.font-bold {
+    font-family: var(--text-bold);
+}
+
+/*** Font Sizes ***/
+.text-sm {
+    font-size: calc(var(--text-base) * 1);
+}
+.text-md {
+    font-size: calc(var(--text-base) * 2);
+}
+.text-lg {
+    font-size: calc(var(--text-base) * 3);
+}
+.text-xl {
+    font-size: calc(var(--text-base) * 4);
+}
+.text-2xl {
+    font-size: calc(var(--text-base) * 5);
+}
